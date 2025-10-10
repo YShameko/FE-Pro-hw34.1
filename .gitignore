@@ -1,6 +1,5 @@
 *.log
 *.zip
-*.mp4
 *.ppt*
 node_modules
 client

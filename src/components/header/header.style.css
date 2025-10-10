@@ -1,0 +1,29 @@
+.app-header {
+    font-size:large;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 8px;
+    background-color: blanchedalmond;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+}
+
+.app-header .active {
+    font-weight: 700;
+    background-color: lightgrey;
+}
+
+.header-link {
+    text-decoration: none;
+    padding: 8px;
+}
+
+.app-header .logo {
+
+}
+
+.app-header .menu {
+    
+}
