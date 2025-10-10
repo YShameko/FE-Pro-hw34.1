@@ -1,0 +1,7 @@
+*.log
+*.zip
+*.ppt*
+node_modules
+client
+server
+env-vars.js

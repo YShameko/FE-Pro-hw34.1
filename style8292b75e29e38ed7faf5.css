@@ -1,0 +1,107 @@
+/*!*****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
+  \*****************************************************************/
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 20px;
+  margin: 6px 0;
+}
+
+pre {
+  font-size: large;
+  margin: 3px 0;
+}
+
+h1 {
+  margin: 16px 0;
+  font-size: 24px;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 12px 0;
+  font-size: 18px;
+}
+
+/*!******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/header/header.style.css ***!
+  \******************************************************************************************/
+.app-header {
+    font-size:large;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 8px;
+    background-color: blanchedalmond;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+}
+
+.app-header .active {
+    font-weight: 700;
+    background-color: lightgrey;
+}
+
+.header-link {
+    text-decoration: none;
+    padding: 8px;
+}
+
+.app-header .logo {
+
+}
+
+.app-header .menu {
+    
+}
+/*!******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/footer/footer.style.css ***!
+  \******************************************************************************************/
+
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/app.style.css ***!
+  \********************************************************************************/
+.block {
+  padding: 6px 0;
+  text-align: center;
+}
+
+.smiley-block {
+  padding: 12px 0;
+}
+
+.results-btn {
+  color: white;
+  background-color: green;
+  font-size: larger;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  margin: 6px 12px;
+}
+
+.results-btn:hover {
+  cursor: pointer;
+}
+
+.clr-results-btn {
+  color: white;
+  background-color: red;
+  font-size: larger;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  margin: 6px 12px;
+}
+
+.clr-results-btn:hover {
+  cursor: pointer;
+}
+
+
+/*# sourceMappingURL=style8292b75e29e38ed7faf5.css.map*/
