@@ -37,14 +37,12 @@ h2 {
     justify-content: space-between;
     gap: 24px;
     padding: 8px;
-    background-color: blanchedalmond;
+    background-color: rgb(244, 244, 244);;
     border-bottom: 1px solid;
-    border-top: 1px solid;
 }
 
 .app-header .active {
     font-weight: 700;
-    background-color: lightgrey;
 }
 
 .header-link {
@@ -53,11 +51,28 @@ h2 {
 }
 
 .app-header .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+.app-header .logo-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #ed6c02;
+    border-radius: 50%;
+}
+
+.app-header .logo-text {
+    color: #ed6c02;
+    font-weight: 700;
 }
 
 .app-header .menu {
-    
+    display: flex;
+    gap: 10px;
 }
 /*!******************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/footer/footer.style.css ***!
@@ -104,4 +119,4 @@ h2 {
 }
 
 
-/*# sourceMappingURL=style8292b75e29e38ed7faf5.css.map*/
+/*# sourceMappingURL=style0e20e21b18b9b1eb21af.css.map*/
