@@ -37,8 +37,9 @@ h2 {
     justify-content: space-between;
     gap: 24px;
     padding: 8px;
-    background-color: rgb(244, 244, 244);;
-    border-bottom: 1px solid;
+    background-color: rgb(244, 244, 244);
+    /* border-bottom: 1px solid; */
+    box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.3);
 }
 
 .app-header .active {
@@ -59,8 +60,8 @@ h2 {
 
 .app-header .logo-icon {
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     background-color: #ed6c02;
     border-radius: 50%;
 }
@@ -77,7 +78,35 @@ h2 {
 /*!******************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/footer/footer.style.css ***!
   \******************************************************************************************/
-
+.footer {
+    position: fixed; 
+    bottom: 0; 
+    max-width: 1400px;
+    margin: 0 auto;    
+    width: 100%;
+    font-weight: 400;
+    background-color: rgb(244, 244, 244);
+    padding: 12px 0;
+    text-align: center;
+}
+/*!****************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/about/about.style.css ***!
+  \****************************************************************************************/
+h3 {
+    margin: 25px 0;
+    font-weight: 700;
+    font-size: x-large;
+    text-align: center;
+}
+/*!**************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/hw34/hw34.style.css ***!
+  \**************************************************************************************/
+h3 {
+    margin: 25px 0;
+    font-weight: 700;
+    font-size: x-large;
+    text-align: left;
+}
 /*!********************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/app.style.css ***!
   \********************************************************************************/
@@ -119,4 +148,4 @@ h2 {
 }
 
 
-/*# sourceMappingURL=style0e20e21b18b9b1eb21af.css.map*/
+/*# sourceMappingURL=style60a6db5479da26aa2266.css.map*/

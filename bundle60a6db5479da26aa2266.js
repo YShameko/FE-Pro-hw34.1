@@ -30272,8 +30272,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _header_Header_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header/Header.jsx */ "./src/components/header/Header.jsx");
 /* harmony import */ var _footer_Footer_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./footer/Footer.jsx */ "./src/components/footer/Footer.jsx");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/development/chunk-OIYGIGL5.mjs");
-/* harmony import */ var _app_style_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.style.css */ "./src/components/app.style.css");
+/* harmony import */ var _about_About_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./about/About.jsx */ "./src/components/about/About.jsx");
+/* harmony import */ var _hw34_hw34_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./hw34/hw34.jsx */ "./src/components/hw34/hw34.jsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/development/chunk-OIYGIGL5.mjs");
+/* harmony import */ var _app_style_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.style.css */ "./src/components/app.style.css");
+
 
 
 
@@ -30281,40 +30284,83 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function App() {
-  // componentDidMount() {
-  //     axios.get('/db.json')
-  //         .then(resp => {
-  //             return new Promise(resolve => {
-  //                 setTimeout(() => resolve(resp.data), 3000);
-  //             });
-  //         })
-  //         .then(data => {
-  //             this.setState({
-  //                 planList: data.plan
-  //             });
-  //         });
-  // }
-
   // ---------------------------------------------------------------------------------
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_header_Header_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Route, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_header_Header_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
     path: "/",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Main page")
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
     path: "/about",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "About page")
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_about_About_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
     path: "/hotels",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Page with hotels will be here soon"))
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
     path: "/hw34",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("pre", null, "#FE-Pro-HW 34.1. Booking \u0417 \u0432\u0438\u043A\u043E\u0440\u0438\u0441\u0442\u0430\u043D\u043D\u044F\u043C \u0441\u0442\u0435\u043A\u0430: Create React App, React-router, React-final-form, MUI, Axios, Redux, Redux-first-history, Redux-saga, ENV, Eslint, Json-server. \u0421\u0430\u043C\u043E\u0441\u0442\u0456\u0439\u043D\u043E \u0437\u0440\u043E\u0431\u0438\u0442\u0438 Booking \u0434\u043E\u0434\u0430\u0442\u043E\u043A (\u043C\u043E\u0436\u043D\u0430 \u043F\u0456\u0434\u0433\u043B\u044F\u0434\u0430\u0442\u0438 \u0437 \u043F\u0440\u0438\u043A\u043B\u0430\u0434\u0443 \u0437 \u0443\u0440\u043E\u043A\u0443). \u0414\u043E\u0434\u0430\u0442\u043E\u043A \u043F\u043E\u0432\u0438\u043D\u0435\u043D \u0441\u043A\u043B\u0430\u0434\u0430\u0442\u0438\u0441\u044F \u044F\u043A \u043C\u0456\u043D\u0456\u043C\u0443\u043C \u0456\u0437 3\u0445 \u0447\u0430\u0441\u0442\u0438\u043D: 1. \"Main\" \u0441\u0442\u043E\u0440\u0456\u043D\u043A\u0430 2. \"About\" 3. \"Hotels\" \u0423 \u043F\u043E\u043B\u0456\"Destination\" \u0432\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u0438 \u0441\u043F\u0438\u0441\u043E\u043A \u0434\u0430\u043D\u0438\u0445 \u0432\u0456\u0434 \u0441\u0435\u0440\u0432\u0435\u0440\u0430 (\u0434\u0430\u043D\u0456 \u043F\u0440\u0438\u043A\u0440\u0456\u043F\u043B\u0435\u043D\u043E \u0443 \u0444\u0430\u0439\u043B\u0456 db.json). \u041F\u0456\u0441\u043B\u044F \u0437\u0430\u043F\u043E\u0432\u043D\u0435\u043D\u043D\u044F \u0434\u0430\u043D\u0438\u0445 \u0444\u043E\u0440\u043C\u0438 (\u043C\u043E\u0436\u043D\u0430 \u0434\u043E\u0434\u0430\u0442\u0438 \u0432\u0430\u043B\u0456\u0434\u0430\u0446\u0456\u044E \u043D\u0430 \u043E\u0431\u043E\u0432'\u044F\u0437\u043A\u043E\u0432\u0456 \u043F\u043E\u043B\u044F) \u0442\u0430 \u043D\u0430\u0442\u0438\u0441\u043A\u0430\u043D\u043D\u044F \u043A\u043D\u043E\u043F\u043A\u0438 \"Send\". \u041F\u043E\u0442\u0440\u0456\u0431\u043D\u043E \u043D\u0430\u0434\u0456\u0441\u043B\u0430\u0442\u0438 \u0437\u0430\u043F\u0438\u0442 \u043D\u0430 Json-server, \u0437\u0430 \u043E\u0442\u0440\u0438\u043C\u0430\u043D\u043D\u044F\u043C \u0441\u043F\u0438\u0441\u043A\u0443 \u0433\u043E\u0442\u0435\u043B\u0456\u0432. \u0414\u0430\u043D\u0456 \u0444\u043E\u0440\u043C\u0438 \u043D\u0430\u0434\u0456\u0441\u043B\u0430\u0442\u0438 \u0432 \u0437\u0430\u043F\u0438\u0442 \u0447\u0435\u0440\u0435\u0437 payload. \u0406 \u043F\u0456\u0441\u043B\u044F \u0443\u0441\u043F\u0456\u0448\u043D\u043E\u0457 \u0432\u0456\u0434\u043F\u043E\u0432\u0456\u0434\u0456, \u0437\u0440\u043E\u0431\u0438\u0442\u0438 \u0440\u0435\u0434\u0438\u0440\u0435\u043A\u0442 \u043D\u0430 \u0441\u0442\u043E\u0440\u0456\u043D\u043A\u0443 hotels. \u0414\u0435 \u0432\u0436\u0435 \u043F\u043E\u0442\u0440\u0456\u0431\u043D\u043E \u0432\u0456\u0434\u043E\u0431\u0440\u0430\u0437\u0438\u0442\u0438 \u0432\u0441\u0456 \u0433\u043E\u0442\u0435\u043B\u0456."))
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_hw34_hw34_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
     path: "*",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Oops, you did it again... :( ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "You have entered a wrong path, I don't have any page associated with it. ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "Shall we try to return to the main page? ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Oops, you did it again... :( ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "You have entered a wrong path, I don't have any page associated with it. ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "Shall we try to return to the main page? ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {
       to: "/"
     }, " main page "))
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_footer_Footer_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 }
+
+/***/ }),
+
+/***/ "./src/components/about/About.jsx":
+/*!****************************************!*\
+  !*** ./src/components/about/About.jsx ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _about_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./about.style.css */ "./src/components/about/about.style.css");
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function () {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, " About page "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aut asperiores qui rerum nihil ab possimus laborum, recusandae optio dolore facilis minima quod sequi earum harum veniam nulla quo tenetur?"));
+});
+
+/***/ }),
+
+/***/ "./src/components/about/about.style.css":
+/*!**********************************************!*\
+  !*** ./src/components/about/about.style.css ***!
+  \**********************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+    if(true) {
+      (function() {
+        var localsJsonString = undefined;
+        // 1760183102870
+        var cssReload = __webpack_require__(/*! ../../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {});
+        // only invalidate when locals change
+        if (
+          module.hot.data &&
+          module.hot.data.value &&
+          module.hot.data.value !== localsJsonString
+        ) {
+          module.hot.invalidate();
+        } else {
+          module.hot.accept();
+        }
+        module.hot.dispose(function(data) {
+          data.value = localsJsonString;
+          cssReload();
+        });
+      })();
+    }
+  
 
 /***/ }),
 
@@ -30331,7 +30377,7 @@ __webpack_require__.r(__webpack_exports__);
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1760180416272
+        // 1760182909035
         var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {});
         // only invalidate when locals change
         if (
@@ -30370,7 +30416,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function () {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Diploma app, (c) 2025");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "footer"
+  }, "Diploma app, (c) 2025");
 });
 
 /***/ }),
@@ -30388,7 +30436,7 @@ __webpack_require__.r(__webpack_exports__);
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1760180416275
+        // 1760185186378
         var cssReload = __webpack_require__(/*! ../../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {});
         // only invalidate when locals change
         if (
@@ -30430,39 +30478,43 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var menuItems = [{
+  to: '/',
+  title: 'Home'
+}, {
+  to: '/about',
+  title: 'About'
+}, {
+  to: '/hotels',
+  title: 'Hotels'
+}];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function () {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "app-header"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
+    to: "/",
+    className: "header-link"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "logo"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "logo-icon"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "logo-text"
-  }, "Booking")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
+  }, "Booking"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
     className: "menu"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
-    to: "/",
-    className: "header-link"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    variant: "contained",
-    color: "warning",
-    size: "small"
-  }, " Home ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
-    to: "/about",
-    className: "header-link"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    variant: "contained",
-    color: "warning",
-    size: "small"
-  }, " About ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
-    to: "/hotels",
-    className: "header-link"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    variant: "contained",
-    color: "warning",
-    size: "small"
-  }, " Hotels "))));
+  }, menuItems.map(function (_ref) {
+    var to = _ref.to,
+      title = _ref.title;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
+      to: to,
+      key: to,
+      className: "header-link"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      variant: "contained",
+      color: "warning",
+      size: "small"
+    }, title));
+  })));
 });
 
 /***/ }),
@@ -30480,7 +30532,64 @@ __webpack_require__.r(__webpack_exports__);
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1760180679185
+        // 1760185433124
+        var cssReload = __webpack_require__(/*! ../../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {});
+        // only invalidate when locals change
+        if (
+          module.hot.data &&
+          module.hot.data.value &&
+          module.hot.data.value !== localsJsonString
+        ) {
+          module.hot.invalidate();
+        } else {
+          module.hot.accept();
+        }
+        module.hot.dispose(function(data) {
+          data.value = localsJsonString;
+          cssReload();
+        });
+      })();
+    }
+  
+
+/***/ }),
+
+/***/ "./src/components/hw34/hw34.jsx":
+/*!**************************************!*\
+  !*** ./src/components/hw34/hw34.jsx ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _hw34_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hw34.style.css */ "./src/components/hw34/hw34.style.css");
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function () {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, " #FE-Pro-HW 34.1. Booking "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "\u0417 \u0432\u0438\u043A\u043E\u0440\u0438\u0441\u0442\u0430\u043D\u043D\u044F\u043C \u0441\u0442\u0435\u043A\u0430: Create React App, React-router, React-final-form, MUI, Axios, Redux, Redux-first-history, Redux-saga, ENV, Eslint, Json-server.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "\u0421\u0430\u043C\u043E\u0441\u0442\u0456\u0439\u043D\u043E \u0437\u0440\u043E\u0431\u0438\u0442\u0438 Booking \u0434\u043E\u0434\u0430\u0442\u043E\u043A (\u043C\u043E\u0436\u043D\u0430 \u043F\u0456\u0434\u0433\u043B\u044F\u0434\u0430\u0442\u0438 \u0437 \u043F\u0440\u0438\u043A\u043B\u0430\u0434\u0443 \u0437 \u0443\u0440\u043E\u043A\u0443).", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "\u0414\u043E\u0434\u0430\u0442\u043E\u043A \u043F\u043E\u0432\u0438\u043D\u0435\u043D \u0441\u043A\u043B\u0430\u0434\u0430\u0442\u0438\u0441\u044F \u044F\u043A \u043C\u0456\u043D\u0456\u043C\u0443\u043C \u0456\u0437 3\u0445 \u0447\u0430\u0441\u0442\u0438\u043D: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "1. \"Main\" \u0441\u0442\u043E\u0440\u0456\u043D\u043A\u0430 ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "2. \"About\" ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "3. \"Hotels\" ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "\u0423 \u043F\u043E\u043B\u0456\"Destination\" \u0432\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u0438 \u0441\u043F\u0438\u0441\u043E\u043A \u0434\u0430\u043D\u0438\u0445 \u0432\u0456\u0434 \u0441\u0435\u0440\u0432\u0435\u0440\u0430 (\u0434\u0430\u043D\u0456 \u043F\u0440\u0438\u043A\u0440\u0456\u043F\u043B\u0435\u043D\u043E \u0443 \u0444\u0430\u0439\u043B\u0456 db.json). ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "\u041F\u0456\u0441\u043B\u044F \u0437\u0430\u043F\u043E\u0432\u043D\u0435\u043D\u043D\u044F \u0434\u0430\u043D\u0438\u0445 \u0444\u043E\u0440\u043C\u0438 (\u043C\u043E\u0436\u043D\u0430 \u0434\u043E\u0434\u0430\u0442\u0438 \u0432\u0430\u043B\u0456\u0434\u0430\u0446\u0456\u044E \u043D\u0430 \u043E\u0431\u043E\u0432'\u044F\u0437\u043A\u043E\u0432\u0456 \u043F\u043E\u043B\u044F) \u0442\u0430 \u043D\u0430\u0442\u0438\u0441\u043A\u0430\u043D\u043D\u044F \u043A\u043D\u043E\u043F\u043A\u0438 \"Send\".  ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "\u041F\u043E\u0442\u0440\u0456\u0431\u043D\u043E \u043D\u0430\u0434\u0456\u0441\u043B\u0430\u0442\u0438 \u0437\u0430\u043F\u0438\u0442 \u043D\u0430 Json-server, \u0437\u0430 \u043E\u0442\u0440\u0438\u043C\u0430\u043D\u043D\u044F\u043C \u0441\u043F\u0438\u0441\u043A\u0443 \u0433\u043E\u0442\u0435\u043B\u0456\u0432. \u0414\u0430\u043D\u0456 \u0444\u043E\u0440\u043C\u0438 \u043D\u0430\u0434\u0456\u0441\u043B\u0430\u0442\u0438 \u0432 \u0437\u0430\u043F\u0438\u0442 \u0447\u0435\u0440\u0435\u0437 payload. ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "\u0406 \u043F\u0456\u0441\u043B\u044F \u0443\u0441\u043F\u0456\u0448\u043D\u043E\u0457 \u0432\u0456\u0434\u043F\u043E\u0432\u0456\u0434\u0456, \u0437\u0440\u043E\u0431\u0438\u0442\u0438 \u0440\u0435\u0434\u0438\u0440\u0435\u043A\u0442 \u043D\u0430 \u0441\u0442\u043E\u0440\u0456\u043D\u043A\u0443 hotels. \u0414\u0435 \u0432\u0436\u0435 \u043F\u043E\u0442\u0440\u0456\u0431\u043D\u043E \u0432\u0456\u0434\u043E\u0431\u0440\u0430\u0437\u0438\u0442\u0438 \u0432\u0441\u0456 \u0433\u043E\u0442\u0435\u043B\u0456. ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)));
+});
+
+/***/ }),
+
+/***/ "./src/components/hw34/hw34.style.css":
+/*!********************************************!*\
+  !*** ./src/components/hw34/hw34.style.css ***!
+  \********************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+    if(true) {
+      (function() {
+        var localsJsonString = undefined;
+        // 1760183602963
         var cssReload = __webpack_require__(/*! ../../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {});
         // only invalidate when locals change
         if (
@@ -30545,7 +30654,7 @@ __webpack_require__.r(__webpack_exports__);
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1760180416267
+        // 1760182909029
         var cssReload = __webpack_require__(/*! ../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {});
         // only invalidate when locals change
         if (
@@ -30688,7 +30797,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("0e20e21b18b9b1eb21af")
+/******/ 		__webpack_require__.h = () => ("60a6db5479da26aa2266")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -31833,4 +31942,4 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=bundle0e20e21b18b9b1eb21af.js.map
+//# sourceMappingURL=bundle60a6db5479da26aa2266.js.map
