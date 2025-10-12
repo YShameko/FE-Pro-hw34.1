@@ -1,21 +1,18 @@
-/* Встановлюємо фон та гарантуємо, що контейнер займає весь екран */
 .not-found-container {
-    background-color: #0d1117; /* Темно-сірий/чорний, як космос */
+    background-color: #0d1117; 
     min-height: 100vh;
     padding: 20px;
 }
 
-/* Додаткові стилі для "космічної" типографіки */
 .star-wars-text {
     font-size: 1.1rem;
-    font-family: monospace; /* Робимо схожим на термінал */
-    color: #00ff41; /* Неоновий зелений для відчуття "терміналу" */
+    font-family: monospace; 
+    color: #00ff41; 
     border: 1px dashed rgba(255, 255, 255, 0.2);
     padding: 10px 20px;
     margin-top: 40px;
 }
 
-/* Налаштування для кнопок, щоб краще виглядали на темному фоні */
 .btn-warning {
     color: #0d1117;
 }
