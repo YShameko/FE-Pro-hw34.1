@@ -4,3 +4,7 @@ h3 {
     font-size: x-large;
     text-align: left;
 }
+
+p {
+    margin: 24px 0;
+}

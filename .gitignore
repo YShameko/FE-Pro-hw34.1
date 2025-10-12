@@ -4,5 +4,5 @@
 node_modules
 client
 server
-components/page404/test
+src/components/page404/test
 env-vars.js

@@ -14,10 +14,41 @@ module.exports = {
 
     resolve: {
         extensions: ['.js', '.jsx'],
+        
+        // === FIX FOR NODE.JS CORE MODULES IN WEBPACK 5 ===
+        // fallback: {
+        //     // Для jest-worker та інших інструментів:
+        //     "fs": false,
+        //     "os": require.resolve("os-browserify/browser"),
+        //     "path": require.resolve("path-browserify"),
+        //     "stream": require.resolve("stream-browserify"),
+        //     "assert": require.resolve("assert/"),
+        //     "buffer": require.resolve("buffer/"),
+        //     "util": require.resolve("util/"),
+        //     "crypto": require.resolve("crypto-browserify"),
+        //     "vm": require.resolve("vm-browserify"),
+        //     "constants": require.resolve("constants-browserify"),
+        //     "zlib": require.resolve("browserify-zlib"),
+        //     "tty": require.resolve("tty-browserify"),
+        //     "http": require.resolve("stream-http"),
+        //     "https": require.resolve("https-browserify"),
+        //     "querystring": require.resolve("querystring-es3"),
+            
+        //     // Модулі, які є суто Node.js і не мають браузерних аналогів:
+        //     "worker_threads": false, 
+        //     "child_process": false,
+        //     "module": false,
+        //     "inspector": false
+        // }
+        // // ===============================================
     },
 
     devtool: 'source-map',
     mode: 'development',
+    // === ВИПРАВЛЕННЯ: Явно вимикаємо мінімізацію в режимі 'development' ===
+    // optimization: {
+    //     minimize: false, 
+    // },
 
     plugins: [
         new HtmlPlugin({

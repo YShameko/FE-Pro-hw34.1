@@ -6,7 +6,7 @@ import './header.style.css';
 const menuItems = [
     {to: '/', title: 'Home'},
     {to: '/about', title: 'About'},
-    {to: '/hotels', title: 'Hotels'},
+    {to: '/hotels', title: 'All Hotels'},
 ];
 
 export default () => {

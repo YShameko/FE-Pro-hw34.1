@@ -1,3 +1,32 @@
 .main-page {
     padding: 25px 0;
+    margin-bottom: 24px;
+}
+
+.dest-select {
+    min-width: 170px;
+}
+
+.search {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.persons-qty {
+    min-width: 80px;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 24px;
 }
