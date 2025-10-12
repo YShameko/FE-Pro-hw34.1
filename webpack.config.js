@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlPlugin = require('html-webpack-plugin');
-// const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CssPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
@@ -23,13 +23,13 @@ module.exports = {
         new HtmlPlugin({
             template: './src/index.html'
         }),
-        // new CopyWebpackPlugin({
-        //     patterns: [
-        //         { from: './src/style.css', to: './'}
-        //     ]
-        // }),
         new CssPlugin({
             filename: 'style[fullhash].css'
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: './src/db.json', to: './'}
+            ]
         }),
     ],
 
