@@ -1,0 +1,202 @@
+/*!*****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
+  \*****************************************************************/
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 20px;
+  margin: 3px 0;
+}
+
+pre {
+  font-size: large;
+  margin: 0;
+}
+
+h1 {
+  margin: 16px 0;
+  font-size: 24px;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 9px 0;
+  font-size: 18px;
+}
+
+/*!******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/header/header.style.css ***!
+  \******************************************************************************************/
+.app-header {
+    font-size:large;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 8px;
+    background-color: rgb(244, 244, 244);
+    /* border-bottom: 1px solid; */
+    box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+.app-header .active {
+    font-weight: 700;
+}
+
+.header-link {
+    text-decoration: none;
+    padding: 8px;
+}
+
+.app-header .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.app-header .logo-icon {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background-color: #ed6c02;
+    border-radius: 50%;
+}
+
+.app-header .logo-text {
+    color: #ed6c02;
+    font-weight: 700;
+}
+
+.app-header .menu {
+    display: flex;
+    gap: 10px;
+}
+
+.header-link .active {
+    font-weight: 800;
+}
+/*!******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/footer/footer.style.css ***!
+  \******************************************************************************************/
+.footer {
+    position: fixed; 
+    bottom: 0; 
+    max-width: 1400px;
+    margin: 0 auto;    
+    width: 100%;
+    font-weight: 400;
+    background-color: rgb(244, 244, 244);
+    padding: 12px 0;
+    text-align: center;
+}
+/*!***********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/pages/about/about.style.css ***!
+  \***********************************************************************************/
+h3 {
+    margin: 25px 0;
+    font-weight: 700;
+    font-size: x-large;
+    text-align: center;
+}
+/*!*********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/pages/hw34/hw34.style.css ***!
+  \*********************************************************************************/
+h3 {
+    margin: 25px 0;
+    font-weight: 700;
+    font-size: x-large;
+    text-align: left;
+}
+
+p {
+    margin: 24px 0;
+}
+/*!***************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/pages/page404/page404.style.css ***!
+  \***************************************************************************************/
+
+/*!*********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/pages/main/main.style.css ***!
+  \*********************************************************************************/
+.main-page {
+    padding: 25px 0;
+    margin-bottom: 24px;
+}
+
+.dest-select {
+    min-width: 170px;
+}
+
+.search {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.persons-qty {
+    min-width: 80px;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 24px;
+}
+/*!*************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/pages/hotels/hotels.style.css ***!
+  \*************************************************************************************/
+
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/app.style.css ***!
+  \********************************************************************************/
+.block {
+  padding: 6px 0;
+  text-align: center;
+}
+
+.smiley-block {
+  padding: 12px 0;
+}
+
+.results-btn {
+  color: white;
+  background-color: green;
+  font-size: larger;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  margin: 6px 12px;
+}
+
+.results-btn:hover {
+  cursor: pointer;
+}
+
+.clr-results-btn {
+  color: white;
+  background-color: red;
+  font-size: larger;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  margin: 6px 12px;
+}
+
+.clr-results-btn:hover {
+  cursor: pointer;
+}
+
+
+/*# sourceMappingURL=style89e942f5b83f77479150.css.map*/
