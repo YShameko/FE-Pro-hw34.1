@@ -3,33 +3,33 @@ import axios from "axios";
 import { call, put, takeLatest } from "redux-saga/effects";
 
 // =================================================================================================
-const destinationsSlice = createSlice({
-    name: 'destinations',
+const hotelsSlice = createSlice({
+    name: 'hotels',
     initialState: [],
     reducers: {
-        setDestinationsList: (_, action) => action.payload
+        setHotelsList: (_, action) => action.payload
     }
 });
 
-export const { setDestinationsList } = destinationsSlice.action;
+export const { setHotelsList } = hotelsSlice.actions;
 
-export const fetchDestinations = createAction('FETCH_DESTINATIONS');
+export const fetchHotels = createAction('FETCH_HOTELS');
 
-function* fetchDestinationsHandler() {
+function* fetchHotelsHandler() {
     try {
         const list = yield call(async() => {
-            const resp = await axios.get('https://yshameko.free.beeceptor.com//destination');
+            const resp = await axios.get('https://yshameko.free.beeceptor.com/hotels');
             return resp.data;
         });
-        yield put(setDestinationsList(list));
+        yield put(setHotelsList(list));
     }
     catch(error) {
         console.error(error);
     }
 }
 
-export const destinationsSaga = function* () {
-    yield takeLatest(fetchDestinations, fetchDestinationsHandler);
+export const hotelsSaga = function* () {
+    yield takeLatest(fetchHotels, fetchHotelsHandler);
 }
 
-export default destinationsSlice.reducer;
+export default hotelsSlice.reducer;
