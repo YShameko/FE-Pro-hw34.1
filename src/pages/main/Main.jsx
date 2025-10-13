@@ -5,12 +5,15 @@ import 'dayjs/locale/uk';
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs"; 
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { DatePicker } from "@mui/x-date-pickers";
-import axios from "axios";
-import { ErrorMessage, Form, Formik, useFormik } from "formik";
-import './main.style.css';
 import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { ErrorMessage, Form, Formik, useFormik } from "formik";
+import { setUserData } from "../../redux/userDataSlice";
+import { fetchDestinations } from "../../redux/destinationsSlice";
+import './main.style.css';
 
 export default () => {
+    const dispatch = useDispatch();
     const formik = useFormik({
         initialValues: {
             destination: '',
@@ -56,31 +59,18 @@ export default () => {
             return errors;
         },
         onSubmit: (values) => {
-            // dispatch()
+            dispatch(setUserData({...values, checkIn: +values.checkIn.toDate(), checkOut: +values.checkOut.toDate() }));
             navigate('/hotels');
             // alert(JSON.stringify(values, null, 2));
         }
     });
 
-    const [destinations, setDestinations] = useState([]);
-    const [error, setError] = useState(null); 
+    const destinations = useSelector(state => state.destinations);
 
     const navigate = useNavigate('/hotels');
 
     useEffect(() => {
-        axios.get('https://yshameko.free.beeceptor.com/destination')
-            .then(resp => {
-                setDestinations(resp.data);
-                setError(null); 
-            })
-            .catch(err => {
-                console.error("Could not get data from the server:", err);
-                setError("Could not get data from the server");
-                setDestinations([ { 
-                        id: 'dest-error', 
-                        label: 'Error: Could not download the destinations',
-                    }]); 
-            });
+        dispatch(fetchDestinations());
     }, []);
 
     const onDestChanged = e => {
@@ -98,7 +88,7 @@ export default () => {
                 <Select label='Destination' className="dest-select" name="destination" 
                     value={formik.values.destination} onChange={onDestChanged}
                 >
-                    {destinations.map(dest => {
+                    {Array.isArray(destinations) && destinations.map(dest => {
                         return <MenuItem key={dest.id} value={dest.id}> {dest.label} </MenuItem>
                     })}
                 </Select>
